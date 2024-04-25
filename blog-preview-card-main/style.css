@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --yellow: rgb(244, 208, 78);
+  --white: rgb(255, 255, 255);
+  --grey: rgb(128, 128, 128);
+  --black: rgb(18, 18, 18);
+}
+html {
+  font-size: 16px;
+  font-family: Figtree, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--yellow);
+  height: 100vh;
+  width: 100vw;
+}
+#main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--white);
+  width: 400px;
+  height: 550px;
+  border: 1px solid var(--black);
+  border-radius: 20px;
+  box-shadow: 7px 7px var(--black);
+}
+.image {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img {
+  border-radius: 15px;
+  width: 100%;
+}
+.learning {
+  margin: 25px 0px 10px;
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: 10px;
+  font-weight: 800;
+  border-radius: 10px;
+  width: 25%;
+}
+.published {
+  margin-bottom: 15px;
+}
+#main h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+#main h1 a {
+  text-decoration: none;
+  color: var(--black);
+  transition: 0.1s;
+}
+#main h1 a:hover {
+  color: var(--yellow);
+}
+.description {
+  color: var(--grey);
+  letter-spacing: 0.75px;
+  margin-bottom: 15px;
+}
+.profile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-weight: 800;
+  margin-top: 15px;
+}
+.profile img {
+  width: 45px;
+}
+.attribution {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 400px) {
+  #main {
+    width: 90%;
+  }
+  #main h1 {
+    margin: 20px 0px 0px 0px;
+    font-size: 24px;
+  }
+  .published,
+  .description {
+    margin: 15px 0px 0px 0px;
+  }
+  .profile {
+    margin: 25px 0px 0px 0px;
+  }
+  .learning {
+    width: 29%;
+  }
+}
